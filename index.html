@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://kit.fontawesome.com/cb2a7e00f9.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Anton&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <title>Design Project</title>
     <style>
@@ -11,20 +13,26 @@
         body {
             background-color: #F0F0F0;
         }
+        .text-one {
+            font-family: 'Anton', sans-serif;
+        }
+        .text-two {
+            font-family: "abel", sans-serif;
+        }
         .circle-icons {
-            border: solid white .5em;
+            border: solid white 8px;
             color: white;
             border-radius: 50%;
             height: 140px;
             width: 140px;
-            margin: .6em;
+            margin: 9.6px;
             display: flex;
             align-items: center;
             justify-content: center;
         }
         .text-circles {
             font-weight: bold;
-            margin: .3em;
+            margin: 2.4px;
             border-radius: 50%;
             height: 15px;
             width: 15px;
@@ -33,59 +41,69 @@
             align-items: center;
             justify-content: center;
         }
+
+        @media screen and (min-width:576px) {
+
+        }
+
+        @media screen and (min-width:768px) { /* ... */ }
+
+        @media screen and (min-width:992px) { /* ... */ }
+
+        @media screen and (min-width:1200px) { /* ... */ }
     </style>
 </head>
 <body>
 <div class="container">
-    <div class="row justify-content-xs-center">
-        <div class="col col-xs-2"></div>
-        <h1 class="col-xs-auto">codeup design</h1>
-        <div class="col col-xs-2"></div>
+    <div class="row justify-content-center">
+        <div class="col"></div>
+        <h1 class="col-auto text-two">codeup design</h1>
+        <div class="col"></div>
+<!--    </div>-->
+<!--    <nav>-->
+<!--        <div>-->
+<!--            <ul>-->
+<!--                -->
+<!--            </ul>-->
+<!--        </div>-->
+<!--    </nav>-->
+    <div class="row justify-content-center">
+        <div class="col col-auto"></div>
+        <div class=" col-auto text-center text-one my-3" style="font-size: 43px">VISUAL DESIGN & WEB DEVELOPMENT</div>
+        <div class="col col-auto"></div>
     </div>
-    <div class="row justify-content-xs-center">
-        <div class="col col-xs-2"></div>
-        <div class="col-xs-auto mx-1">SERVICES</div>
-        <div class="col-xs-auto mx-1">WORK</div>
-        <div class="col-xs-auto mx-1">BLOG</div>
-        <div class="col-xs-auto mx-1">CONTACT</div>
-        <div class="col col-xs-2"></div>
+    <div class="row justify-content-center">
+        <div class=" col col-auto"></div>
+        <div class=" col-auto my-1 text-one" style="font-size: 26px">FROM PARK CITY, UTAH</div>
+        <div class=" col col-auto"></div>
     </div>
-    <div class="row justify-content-xs-center">
-        <div class="col col-xs-2"></div>
-        <div class=" col-xs-auto my-1">VISUAL DESIGN & <br> WEB DEVELOPMENT</div>
-        <div class="col col-xs-2"></div>
+    <div class="row justify-content-center">
+        <div class=" spacetwo col-auto"></div>
+        <div class="col-auto circle-icons text-one" style="background-color: #E6563B; font-size: 28px">DESIGN</div>
+        <div class="col-auto circle-icons text-one" style="background-color: #DEA03D; font-size: 28px">DEVELOP</div>
+        <div class=" spacetwo col-auto"></div>
     </div>
-    <div class="row justify-content-xs-center">
-        <div class="col col-xs-2"></div>
-        <div class=" col-xs-auto my-1">FROM PARK CITY, UTAH</div>
-        <div class="col col-xs-2"></div>
+    <div class="row justify-content-center">
+        <div class="col spacetwo col-auto"></div>
+        <div class="col-auto px-0 circle-icons text-one" style="background-color: #7CB06C; font-size: 28px ">SUPPORT</div>
+        <div class="col-auto px-0 circle-icons text-one" style="background-color: #00ABA9; font-size: 28px ">HOST</div>
+        <div class="col spacetwocol col-auto "></div>
     </div>
-    <div class="row justify-content-xs-center">
-        <div class="col col-xs-1 p-0"></div>
-        <div class="col-xs-auto circle-icons" style="background-color: #E6563B">DESIGN</div>
-        <div class="col-xs-auto circle-icons" style="background-color: #DEA03D">DEVELOP</div>
-        <div class="col col-xs-1 p-0"></div>
-    </div>
-    <div class="row justify-content-xs-center">
-        <div class="col col-xs-1 p-0"></div>
-        <div class="col-xs-auto px-xs-0 circle-icons" style="background-color: #7CB06C">SUPPORT</div>
-        <div class="col-xs-auto px-xs-0 circle-icons" style="background-color: #00ABA9">HOST</div>
-        <div class="col col-xs-1 p-0"></div>
-    </div>
-    <div class="row justify-content-xs-center">
+    <div class="row justify-content-center">
         <div class="card" style="border: none; border-radius: 0; margin: 1em;">
             <img src="img/apple-ipad.jpg" class="card-img-top" alt="apple ipad" style="border: .6em solid #E6E6E6">
-            <div class="card-body" style="background: #F0F0F0; padding: 1em 0; border: 0;">
-                <div class="card-text" style="display: flex">
+            <div class="card-body m-0" style="background: #F0F0F0; padding: 8px; border: 0;">
+                <div class="card-text m-0 text-two" style="display: flex">
                     FEATURED PRODUCT
-                        <span class="text-circles" style="background-color: #E6563B; margin-left: auto">D</span>
-                        <span class="text-circles" style="background-color: #DEA03D">D</span>
-                        <span class="text-circles" style="background-color: #7CB06C">S</span>
-                        <span class="text-circles" style="background-color: #00ABA9">H</span>
+                        <span class="text-circles text-one" style="background-color: #E6563B; margin-left: auto; font-size: 6px">D</span>
+                        <span class="text-circles text-one" style="background-color: #DEA03D; font-size: 6px">D</span>
+                        <span class="text-circles text-one" style="background-color: #7CB06C; font-size: 6px">S</span>
+                        <span class="text-circles text-one" style="background-color: #00ABA9; font-size: 6px">H</span>
                 </div>
             </div>
         </div>
     </div>
+</div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
