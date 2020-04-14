@@ -62,6 +62,7 @@
             border-radius: 0;
         }
 
+
         .des-card-two {display: none}
         .des-card-three {display: none}
         .des-card-four {display: none}
@@ -88,8 +89,8 @@
             }
             .des-select {
                 width: 600px;
-                padding-top: 10px;
-                margin: 20px 0 30px;
+                padding-top: 40px;
+                margin: 20px 0 35px;
                 border-top: 2px solid lightgray;
             }
 
@@ -97,10 +98,35 @@
             .des-card-three {display: inline-block}
             .des-card-four {display: inline-block}
 
+            .card {
+                margin: 25px;
+            }
+
 
         }
 
-        @media screen and (min-width:768px) { /* ... */ }
+        @media screen and (min-width:768px) {
+            .dev-head {
+                height: 100px;
+                width: 100px;
+            }
+
+            .des-containercard {
+                display: grid;
+                grid-template-areas:
+                        "card pimage";
+            }
+            .
+
+            .des-card-container {
+                margin-right: 200px;
+                width: 100vw;
+                grid-area: card;
+            }
+            .des-paragraph{
+                grid-area: pimage ;
+            }
+        }
 
         @media screen and (min-width:992px) { /* ... */ }
 
@@ -132,6 +158,7 @@
         <div class="col-auto text-center text-two">SELECTED WORK</div>
     </div>
 <!--cards-->
+        <div class="des-containercard">
         <div class="row justify-content-center des-card-container">
             <div class="col-auto d-flex flex-direction-row" style="padding: 0">
 <!--card 1-->
@@ -149,10 +176,10 @@
                         </div>
                     </div>
                 </div>
-<!--card 2-->
+                <!--card 2-->
                 <div class="col-auto text-one des-card-two" style="padding: 0">
                     <div class="card" style="width: 300px">
-                        <img src="img/apple-ipad.jpg" class="card-img-top" alt="apple ipad" style="border: .6em solid #E6E6E6; ">
+                        <img src="img/macbook.jpg" class="card-img-top" alt="apple ipad" style="border: .6em solid #E6E6E6; ">
                         <div class="card-body m-0" style="background: #F0F0F0; padding: 8px; border: 0;">
                             <div class="card-text m-0 text-two" style="display: flex">
                                 FEATURED PRODUCT
@@ -165,11 +192,11 @@
                     </div>
                 </div>
             </div>
-<!--card 3-->
+            <!--card 3-->
             <div class="col-auto d-flex flex-direction-row" style="padding: 0">
                 <div class="col-auto text-one des-card-three" style="padding: 0">
                     <div class="card" style="width: 300px">
-                        <img src="img/apple-ipad.jpg" class="card-img-top" alt="apple ipad" style="border: .6em solid #E6E6E6; ">
+                        <img src="img/man.jpg" class="card-img-top" alt="apple ipad" style="border: .6em solid #E6E6E6; ">
                         <div class="card-body m-0" style="background: #F0F0F0; padding: 8px; border: 0;">
                             <div class="card-text m-0 text-two" style="display: flex">
                                 FEATURED PRODUCT
@@ -181,10 +208,10 @@
                         </div>
                     </div>
                 </div>
-<!--card 4-->
+                <!--card 4-->
                 <div class="col-auto text-one des-card-four" style="padding: 0">
                     <div class="card" style="width: 300px">
-                        <img src="img/apple-ipad.jpg" class="card-img-top" alt="apple ipad" style="border: .6em solid #E6E6E6; ">
+                        <img src="img/security.jpg" class="card-img-top" alt="apple ipad" style="border: .6em solid #E6E6E6; ">
                         <div class="card-body m-0" style="background: #F0F0F0; padding: 8px; border: 0;">
                             <div class="card-text m-0 text-two" style="display: flex">
                                 FEATURED PRODUCT
@@ -197,8 +224,12 @@
                     </div>
                 </div>
             </div>
+                <div class="row justify-content-right des-paragraph">
+                    <p class="dev-paragraph">THE ADMIN BAR AND ABSOLUTE POSITIONING</p>
+                <img src="img/head.jpg" class="dev-head">
+            </div>
+            </div>
         </div>
-    </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
