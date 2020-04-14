@@ -13,6 +13,9 @@
         body {
             background-color: #F0F0F0;
         }
+        .container {
+            width: 100vw;
+        }
         .text-one {
             font-family: 'Anton', sans-serif;
         }
@@ -34,8 +37,8 @@
             font-weight: bold;
             margin: 2.4px;
             border-radius: 50%;
-            height: 15px;
-            width: 15px;
+            height: 18px;
+            width: 18px;
             border: none;
             display: flex;
             align-items: center;
@@ -45,6 +48,24 @@
             font-size: 43px;
         }
 
+        .des-park {
+            margin: 20px 0;
+            font-size: 28px;
+        }
+
+        .des-select {
+            margin: 450px 0 30px;
+        }
+
+        div .card {
+            border: none;
+            border-radius: 0;
+        }
+
+        .des-card-two {display: none}
+        .des-card-three {display: none}
+        .des-card-four {display: none}
+
         @media screen and (min-width:576px) {
             .container {
                 display: flex;
@@ -52,12 +73,30 @@
                 align-items: center;
             }
             .infocirq {
-                display: ;
+                margin: 0;
+                padding: 0;
             }
             .vdesign {
                 font-size: 48px;
                 width: 100vw;
             }
+            .des-park {
+                font-size: 32px;
+            }
+            .des-circ {
+                width: 100vw;
+            }
+            .des-select {
+                width: 600px;
+                padding-top: 10px;
+                margin: 20px 0 30px;
+                border-top: 2px solid lightgray;
+            }
+
+            .des-card-two {display: inline-block}
+            .des-card-three {display: inline-block}
+            .des-card-four {display: inline-block}
+
 
         }
 
@@ -70,46 +109,96 @@
 </head>
 <body>
 <div class="container">
-    <div class="row justify-content-center">
-<!--        <div class="col"></div>-->
+    <div class="row justify-content-center des-codeup">
         <h1 class="col-auto text-two">codeup design</h1>
-<!--        <div class="col"></div>-->
     </div>
-    <div class="row justify-content-center">
-<!--        <div class="col"></div>-->
+    <div class="row justify-content-center des-visual">
         <div class="col-auto text-center text-one my-3 vdesign">VISUAL DESIGN & WEB DEVELOPMENT</div>
-<!--        <div class="col"></div>-->
     </div>
-    <div class="row justify-content-center">
-<!--        <div class="col col-auto"></div>-->
-        <div class="col-auto my-1 text-one" style="font-size: 26px">FROM PARK CITY, UTAH</div>
-<!--        <div class="col col-auto"></div>-->
+    <div class="row justify-content-center des-park">
+        <div class="col-auto my-1 text-one">FROM PARK CITY, UTAH</div>
     </div>
-    <div class="row justify-content-center infocirq">
-        <div class="col-auto">
-            <div class="circle-icons text-one" style="background-color: #E6563B; font-size: 28px">DESIGN</div>
-            <div class="circle-icons text-one" style="background-color: #DEA03D; font-size: 28px">DEVELOP</div>
+    <div class="row justify-content-center des-circ">
+        <div class="col-auto d-flex flex-direction-row infocirq">
+            <div class="col-auto circle-icons text-one" style="background-color: #E6563B; font-size: 28px">DESIGN</div>
+            <div class="col-auto circle-icons text-one" style="background-color: #DEA03D; font-size: 28px">DEVELOP</div>
         </div>
-        <div class="col-auto">
-            <div class="px-0 circle-icons text-one" style="background-color: #7CB06C; font-size: 28px ">SUPPORT</div>
-            <div class="px-0 circle-icons text-one" style="background-color: #00ABA9; font-size: 28px ">HOST</div>
+        <div class="col-auto d-flex flex-direction-row infocirq">
+            <div class="col-auto px-0 circle-icons text-one" style="background-color: #7CB06C; font-size: 28px ">SUPPORT</div>
+            <div class="col-auto px-0 circle-icons text-one" style="background-color: #00ABA9; font-size: 28px ">HOST</div>
         </div>
     </div>
-    <div class="row justify-content-center">
-        <div class="card" style="border: none; border-radius: 0;">
-            <img src="img/apple-ipad.jpg" class="card-img-top" alt="apple ipad" style="border: .6em solid #E6E6E6">
-            <div class="card-body m-0" style="background: #F0F0F0; padding: 8px; border: 0;">
-                <div class="card-text m-0 text-two" style="display: flex">
-                    FEATURED PRODUCT
-                        <span class="text-circles text-one" style="background-color: #E6563B; margin-left: auto; font-size: 6px">D</span>
-                        <span class="text-circles text-one" style="background-color: #DEA03D; font-size: 6px">D</span>
-                        <span class="text-circles text-one" style="background-color: #7CB06C; font-size: 6px">S</span>
-                        <span class="text-circles text-one" style="background-color: #00ABA9; font-size: 6px">H</span>
+    <div class="row justify-content-center des-select">
+        <div class="col-auto text-center text-two">SELECTED WORK</div>
+    </div>
+<!--cards-->
+        <div class="row justify-content-center des-card-container">
+            <div class="col-auto d-flex flex-direction-row" style="padding: 0">
+<!--card 1-->
+                <div class="col-auto text-one des-card-one" style="padding: 0">
+                    <div class="card" style="width: 300px">
+                        <img src="img/apple-ipad.jpg" class="card-img-top" alt="apple ipad" style="border: .6em solid #E6E6E6; ">
+                        <div class="card-body m-0" style="background: #F0F0F0; padding: 8px; border: 0;">
+                            <div class="card-text m-0 text-two" style="display: flex">
+                                FEATURED PRODUCT
+                                <span class="text-circles text-one" style="background-color: #E6563B; margin-left: auto; font-size: 9px">D</span>
+                                <span class="text-circles text-one" style="background-color: #DEA03D; font-size: 9px">D</span>
+                                <span class="text-circles text-one" style="background-color: #7CB06C; font-size: 9px">S</span>
+                                <span class="text-circles text-one" style="background-color: #00ABA9; font-size: 9px">H</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+<!--card 2-->
+                <div class="col-auto text-one des-card-two" style="padding: 0">
+                    <div class="card" style="width: 300px">
+                        <img src="img/apple-ipad.jpg" class="card-img-top" alt="apple ipad" style="border: .6em solid #E6E6E6; ">
+                        <div class="card-body m-0" style="background: #F0F0F0; padding: 8px; border: 0;">
+                            <div class="card-text m-0 text-two" style="display: flex">
+                                FEATURED PRODUCT
+                                <span class="text-circles text-one" style="background-color: #E6563B; margin-left: auto; font-size: 9px">D</span>
+                                <span class="text-circles text-one" style="background-color: #DEA03D; font-size: 9px">D</span>
+                                <span class="text-circles text-one" style="background-color: #7CB06C; font-size: 9px">S</span>
+                                <span class="text-circles text-one" style="background-color: #00ABA9; font-size: 9px">H</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+<!--card 3-->
+            <div class="col-auto d-flex flex-direction-row" style="padding: 0">
+                <div class="col-auto text-one des-card-three" style="padding: 0">
+                    <div class="card" style="width: 300px">
+                        <img src="img/apple-ipad.jpg" class="card-img-top" alt="apple ipad" style="border: .6em solid #E6E6E6; ">
+                        <div class="card-body m-0" style="background: #F0F0F0; padding: 8px; border: 0;">
+                            <div class="card-text m-0 text-two" style="display: flex">
+                                FEATURED PRODUCT
+                                <span class="text-circles text-one" style="background-color: #E6563B; margin-left: auto; font-size: 9px">D</span>
+                                <span class="text-circles text-one" style="background-color: #DEA03D; font-size: 9px">D</span>
+                                <span class="text-circles text-one" style="background-color: #7CB06C; font-size: 9px">S</span>
+                                <span class="text-circles text-one" style="background-color: #00ABA9; font-size: 9px">H</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+<!--card 4-->
+                <div class="col-auto text-one des-card-four" style="padding: 0">
+                    <div class="card" style="width: 300px">
+                        <img src="img/apple-ipad.jpg" class="card-img-top" alt="apple ipad" style="border: .6em solid #E6E6E6; ">
+                        <div class="card-body m-0" style="background: #F0F0F0; padding: 8px; border: 0;">
+                            <div class="card-text m-0 text-two" style="display: flex">
+                                FEATURED PRODUCT
+                                <span class="text-circles text-one" style="background-color: #E6563B; margin-left: auto; font-size: 9px">D</span>
+                                <span class="text-circles text-one" style="background-color: #DEA03D; font-size: 9px">D</span>
+                                <span class="text-circles text-one" style="background-color: #7CB06C; font-size: 9px">S</span>
+                                <span class="text-circles text-one" style="background-color: #00ABA9; font-size: 9px">H</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
