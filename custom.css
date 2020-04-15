@@ -1,0 +1,146 @@
+*{box-sizing: border-box;}
+body {
+    background-color: #F0F0F0;
+}
+.container {
+    width: 100vw;
+}
+.text-one {
+    font-family: 'Anton', sans-serif;
+}
+.text-two {
+    font-family: "abel", sans-serif;
+}
+.circle-icons {
+    border: solid white 8px;
+    color: white;
+    border-radius: 50%;
+    height: 140px;
+    width: 140px;
+    margin: 9.6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.text-circles {
+    font-weight: bold;
+    margin: 2.4px;
+    border-radius: 50%;
+    height: 18px;
+    width: 18px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.vdesign {
+    font-size: 43px;
+}
+
+.des-park {
+    margin: 20px 0;
+    font-size: 28px;
+}
+
+.des-select {
+    margin: 450px 0 30px;
+}
+
+div .card {
+    border: none;
+    border-radius: 0;
+}
+
+
+.des-card-two {display: none}
+.des-card-three {display: none}
+.des-card-four {display: none}
+.des-paragraph > img {display: none}
+.des-paragraph > p {display: none}
+
+
+@media screen and (min-width:576px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .infocirq {
+        margin: 0;
+        padding: 0;
+    }
+    .vdesign {
+        font-size: 48px;
+        width: 100vw;
+    }
+    .des-park {
+        font-size: 32px;
+    }
+    .des-circ {
+        width: 100vw;
+    }
+    .des-select {
+        width: 600px;
+        padding-top: 40px;
+        margin: 20px 0 35px;
+        border-top: 2px solid lightgray;
+    }
+
+    .des-card-two {display: inline-block}
+    .des-card-three {display: inline-block}
+    .des-card-four {display: inline-block}
+    /**/
+    .card > img {
+
+
+    }
+
+    .card {
+        margin: 25px;
+        width: 100px;
+    }
+
+
+}
+
+@media screen and (min-width:768px) {
+
+
+    @media screen and (min-width:992px) {
+        .des-paragraph > img {display: inline-block}
+        .des-paragraph > p {
+            display: inline-block;
+            padding: 0;
+            font-size: 30px;
+        }
+        .dev-head {
+            margin: 8px 20px;
+            padding: 0;
+            height: 74px;
+            width: 74px;
+            border: 2px solid lightgray;
+        }
+
+        .des-containercard {
+            display: grid;
+            grid-template-columns: 50vw 50vw;
+            grid-template-rows: 300px 300px;
+        }
+
+        /*. {*/
+        /*    margin-right: 200px;*/
+        /*    width: 100vw;*/
+        /*    grid-area: 1 / 1 / 2 / 2;*/
+        /*}*/
+        .des-paragraph {
+            margin-left: 200px;
+            display: flex;
+            grid-area: 1 / 2 / 3 / 3;
+            flex-direction: row;
+            justify-content: flex-end;
+        }
+
+    }
+}
+
+@media screen and (min-width:1200px) { /* ... */ }

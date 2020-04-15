@@ -92,6 +92,7 @@
             }
             .des-select {
                 width: 600px;
+                justify-content: center;
                 padding-top: 40px;
                 margin: 20px 0 35px;
                 border-top: 2px solid lightgray;
@@ -108,7 +109,7 @@
 
             .card {
                 margin: 25px;
-                width: 100px;
+                width: 280px;
             }
 
 
@@ -117,41 +118,56 @@
         @media screen and (min-width:768px) {
 
 
-        @media screen and (min-width:992px) {
-            .des-paragraph > img {display: inline-block}
-            .des-paragraph > p {
-                display: inline-block;
-                padding: 0;
-                font-size: 30px;
-            }
-            .dev-head {
-                margin: 8px 20px;
-                padding: 0;
-                height: 74px;
-                width: 74px;
-                border: 2px solid lightgray;
-            }
+            @media screen and (min-width:992px) {
+                .des-paragraph > img {display: inline-block}
+                .des-paragraph > p {
+                    display: inline-block;
+                    padding: 0;
+                    font-size: 30px;
+                }
+                .dev-head {
+                    margin: 8px 20px;
+                    padding: 0;
+                    height: 74px;
+                    width: 74px;
+                    border: 2px solid lightgray;
+                }
 
-            .des-containercard {
-                display: grid;
-                grid-template-columns: 50vw 50vw;
-                grid-template-rows: 300px 300px;
-            }
+                .des-containercard {
+                    display: grid;
+                    grid-template-columns: 50vw 50vw;
+                    grid-template-rows: 300px 300px;
+                }
+                .des-ul {
+                    list-style: none;
+                }
 
-            /*. {*/
-            /*    margin-right: 200px;*/
-            /*    width: 100vw;*/
-            /*    grid-area: 1 / 1 / 2 / 2;*/
-            /*}*/
-            .des-paragraph {
-                margin-left: 200px;
-                display: flex;
-                grid-area: 1 / 2 / 3 / 3;
-                flex-direction: row;
-                justify-content: flex-end;
-            }
+                /*. {*/
+                /*    margin-right: 200px;*/
+                /*    width: 100vw;*/
+                /*    grid-area: 1 / 1 / 2 / 2;*/
+                /*}*/
+                .des-paragraph {
+                    margin-left: 100px;
+                    display: flex;
+                    grid-area: 1 / 2 / 3 / 3;
+                    flex-direction: row;
+                    justify-content: flex-start;
+                }
+                .text-three {
+                    font-family: "abel", sans-serif;
+                    margin: 0 0 50px 650px;
+                    float: right;
+                }
+                .text-two {
+                    margin: 0;
+                }
+                .des-select {
+                    width: 90vw;
+                    justify-content: flex-start;
+                }
 
-        }
+            }
         }
 
         @media screen and (min-width:1200px) { /* ... */ }
@@ -178,8 +194,9 @@
             <div class="col-auto px-0 circle-icons text-one" style="background-color: #00ABA9; font-size: 28px ">HOST</div>
         </div>
     </div>
-    <div class="row justify-content-center des-select">
+    <div class="row des-select">
         <div class="col-auto text-center text-two">SELECTED WORK</div>
+        <div class="col-auto text-center text-three">THE LAST</div>
     </div>
 <!--cards-->
     <div class="des-containercard">
@@ -187,7 +204,7 @@
             <!--card 1-->
             <div class="col-auto d-flex flex-direction-row" style="padding: 0">
                 <div class="col-auto text-one des-card-one" style="padding: 0">
-                    <div class="card" style="width: 300px">
+                    <div class="card">
                         <img src="img/apple-ipad.jpg" class="card-img-top" alt="apple ipad" style="border: .6em solid #E6E6E6; ">
                         <div class="card-body m-0" style="background: #F0F0F0; padding: 8px; border: 0;">
                             <div class="card-text m-0 text-two" style="display: flex">
@@ -202,7 +219,7 @@
                 </div>
                 <!--card 2-->
                 <div class="col-auto text-one des-card-two" style="padding: 0">
-                    <div class="card" style="width: 300px">
+                    <div class="card">
                         <img src="img/macbook.jpg" class="card-img-top" alt="apple ipad" style="border: .6em solid #E6E6E6; ">
                         <div class="card-body m-0" style="background: #F0F0F0; padding: 8px; border: 0;">
                             <div class="card-text m-0 text-two" style="display: flex">
@@ -221,7 +238,7 @@
         <div class="row justify-content-center des-card-container">
             <div class="col-auto d-flex flex-direction-row" style="padding: 0">
                 <div class="col-auto text-one des-card-three" style="padding: 0">
-                    <div class="card" style="width: 300px">
+                    <div class="card">
                         <img src="img/man.jpg" class="card-img-top" alt="man" style="border: .6em solid #E6E6E6; ">
                         <div class="card-body m-0" style="background: #F0F0F0; padding: 8px; border: 0;">
                             <div class="card-text m-0 text-two" style="display: flex">
@@ -236,7 +253,7 @@
                 </div>
                 <!--card 4-->
                 <div class="col-auto text-one des-card-four" style="padding: 0">
-                    <div class="card" style="width: 300px">
+                    <div class="card">
                         <img src="img/security.jpg" class="card-img-top" alt="sec" style="border: .6em solid #E6E6E6; ">
                         <div class="card-body m-0" style="background: #F0F0F0; padding: 8px; border: 0;">
                             <div class="card-text m-0 text-two" style="display: flex">
@@ -252,12 +269,17 @@
             </div>
         </div>
         <div class="des-paragraph">
-            <img src="img/mobile-phone.jpg" class="col-auto dev-head">
-            <p class="dev-paragraph text-one">THE ADMIN BAR AND<br> ABSOLUTE POSITIONING</p><br>
-            <img src="img/head.jpg" class="col-auto dev-head">
-            <p class="col-auto dev-paragraph text-one">THE ADMIN BAR AND<br> ABSOLUTE POSITIONING</p><br>
-            <img src="img/google-search.jpg" class="col-auto dev-head">
-            <p class="col-auto dev-paragraph text-one">THE ADMIN BAR AND<br> ABSOLUTE POSITIONING</p>
+            <ul class="des-ul">
+            <li><img src="img/mobile-phone.jpg" class="col-auto dev-head">
+                <p class="dev-paragraph text-one">THE ADMIN BAR AND<br> ABSOLUTE POSITIONING</p></li>
+            <li><img src="img/head.jpg" class="col-auto dev-head">
+                <p class="col-auto dev-paragraph text-one">THE ADMIN BAR AND<br> ABSOLUTE POSITIONING</p></li>
+            <li><img src="img/google-search.jpg" class="col-auto dev-head">
+                <p class="col-auto dev-paragraph text-one">THE ADMIN BAR AND<br> ABSOLUTE POSITIONING</p></li>
+                <li>
+                    <p class="col-auto dev-paragraph text-two">LAST TWEET <br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur deleniti facere incidunt nisi voluptate? Aut autem doloremque eius esse ex illum minus molestias quae? Ea eaque magnam mollitia possimus ullam?</p>
+                </li>
+            </ul>
         </div>
     </div>
 </div>
