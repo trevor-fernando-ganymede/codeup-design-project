@@ -66,6 +66,9 @@
         .des-card-two {display: none}
         .des-card-three {display: none}
         .des-card-four {display: none}
+        .des-paragraph > img {display: none}
+        .des-paragraph > p {display: none}
+
 
         @media screen and (min-width:576px) {
             .container {
@@ -97,38 +100,59 @@
             .des-card-two {display: inline-block}
             .des-card-three {display: inline-block}
             .des-card-four {display: inline-block}
+            /**/
+            .card > img {
+
+
+            }
 
             .card {
                 margin: 25px;
+                width: 100px;
             }
 
 
         }
 
         @media screen and (min-width:768px) {
+
+
+        @media screen and (min-width:992px) {
+            .des-paragraph > img {display: inline-block}
+            .des-paragraph > p {
+                display: inline-block;
+                padding: 0;
+                font-size: 30px;
+            }
             .dev-head {
-                height: 100px;
-                width: 100px;
+                margin: 8px 20px;
+                padding: 0;
+                height: 74px;
+                width: 74px;
+                border: 2px solid lightgray;
             }
 
             .des-containercard {
                 display: grid;
-                grid-template-areas:
-                        "card pimage";
+                grid-template-columns: 50vw 50vw;
+                grid-template-rows: 300px 300px;
             }
-            .
 
-            .des-card-container {
-                margin-right: 200px;
-                width: 100vw;
-                grid-area: card;
+            /*. {*/
+            /*    margin-right: 200px;*/
+            /*    width: 100vw;*/
+            /*    grid-area: 1 / 1 / 2 / 2;*/
+            /*}*/
+            .des-paragraph {
+                margin-left: 200px;
+                display: flex;
+                grid-area: 1 / 2 / 3 / 3;
+                flex-direction: row;
+                justify-content: flex-end;
             }
-            .des-paragraph{
-                grid-area: pimage ;
-            }
+
         }
-
-        @media screen and (min-width:992px) { /* ... */ }
+        }
 
         @media screen and (min-width:1200px) { /* ... */ }
     </style>
@@ -158,10 +182,10 @@
         <div class="col-auto text-center text-two">SELECTED WORK</div>
     </div>
 <!--cards-->
-        <div class="des-containercard">
-        <div class="row justify-content-center des-card-container">
+    <div class="des-containercard">
+        <div class="row justify-content-center des-card-container-two">
+            <!--card 1-->
             <div class="col-auto d-flex flex-direction-row" style="padding: 0">
-<!--card 1-->
                 <div class="col-auto text-one des-card-one" style="padding: 0">
                     <div class="card" style="width: 300px">
                         <img src="img/apple-ipad.jpg" class="card-img-top" alt="apple ipad" style="border: .6em solid #E6E6E6; ">
@@ -193,10 +217,12 @@
                 </div>
             </div>
             <!--card 3-->
+        </div>
+        <div class="row justify-content-center des-card-container">
             <div class="col-auto d-flex flex-direction-row" style="padding: 0">
                 <div class="col-auto text-one des-card-three" style="padding: 0">
                     <div class="card" style="width: 300px">
-                        <img src="img/man.jpg" class="card-img-top" alt="apple ipad" style="border: .6em solid #E6E6E6; ">
+                        <img src="img/man.jpg" class="card-img-top" alt="man" style="border: .6em solid #E6E6E6; ">
                         <div class="card-body m-0" style="background: #F0F0F0; padding: 8px; border: 0;">
                             <div class="card-text m-0 text-two" style="display: flex">
                                 FEATURED PRODUCT
@@ -211,7 +237,7 @@
                 <!--card 4-->
                 <div class="col-auto text-one des-card-four" style="padding: 0">
                     <div class="card" style="width: 300px">
-                        <img src="img/security.jpg" class="card-img-top" alt="apple ipad" style="border: .6em solid #E6E6E6; ">
+                        <img src="img/security.jpg" class="card-img-top" alt="sec" style="border: .6em solid #E6E6E6; ">
                         <div class="card-body m-0" style="background: #F0F0F0; padding: 8px; border: 0;">
                             <div class="card-text m-0 text-two" style="display: flex">
                                 FEATURED PRODUCT
@@ -224,12 +250,16 @@
                     </div>
                 </div>
             </div>
-                <div class="row justify-content-right des-paragraph">
-                    <p class="dev-paragraph">THE ADMIN BAR AND ABSOLUTE POSITIONING</p>
-                <img src="img/head.jpg" class="dev-head">
-            </div>
-            </div>
         </div>
+        <div class="des-paragraph">
+            <img src="img/mobile-phone.jpg" class="col-auto dev-head">
+            <p class="dev-paragraph text-one">THE ADMIN BAR AND<br> ABSOLUTE POSITIONING</p><br>
+            <img src="img/head.jpg" class="col-auto dev-head">
+            <p class="col-auto dev-paragraph text-one">THE ADMIN BAR AND<br> ABSOLUTE POSITIONING</p><br>
+            <img src="img/google-search.jpg" class="col-auto dev-head">
+            <p class="col-auto dev-paragraph text-one">THE ADMIN BAR AND<br> ABSOLUTE POSITIONING</p>
+        </div>
+    </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
