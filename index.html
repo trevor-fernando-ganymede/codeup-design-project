@@ -126,7 +126,7 @@
                     font-size: 30px;
                 }
                 .dev-head {
-                    margin: 8px 20px;
+                    margin: 8px 20px 8px 0px;
                     padding: 0;
                     height: 74px;
                     width: 74px;
@@ -135,11 +135,18 @@
 
                 .des-containercard {
                     display: grid;
-                    grid-template-columns: 50vw 50vw;
+                    grid-template-columns: 55vw 45vw;
                     grid-template-rows: 300px 300px;
+                    width: 1200px;
+                    justify-content: center;
                 }
                 .des-ul {
                     list-style: none;
+                    padding: 0;
+
+                }
+                .des-ul li {
+                    display: flex;
                 }
 
                 /*. {*/
@@ -156,7 +163,7 @@
                 }
                 .text-three {
                     font-family: "abel", sans-serif;
-                    margin: 0 0 50px 650px;
+                    margin: 0 325px 50px auto;
                     float: right;
                 }
                 .text-two {
@@ -165,8 +172,23 @@
                 .des-select {
                     width: 90vw;
                     justify-content: flex-start;
+                    margin-bottom: 0;
                 }
-
+                .dev-paragraph {
+                    font-size: 27px;
+                    margin-bottom: 38px;
+                }
+                .tweet {
+                    margin-top: 50px;
+                }
+                .des-card-container {
+                    margin: 0 0 0 auto;
+                    margin-right: -70px;
+                }
+                .des-card-container-two {
+                    margin: 0 0 0 auto;
+                    margin-right: -70px;
+                }
             }
         }
 
@@ -194,11 +216,11 @@
             <div class="col-auto px-0 circle-icons text-one" style="background-color: #00ABA9; font-size: 28px ">HOST</div>
         </div>
     </div>
+    <!--cards-->
     <div class="row des-select">
         <div class="col-auto text-center text-two">SELECTED WORK</div>
         <div class="col-auto text-center text-three">THE LAST</div>
     </div>
-<!--cards-->
     <div class="des-containercard">
         <div class="row justify-content-center des-card-container-two">
             <!--card 1-->
@@ -270,14 +292,20 @@
         </div>
         <div class="des-paragraph">
             <ul class="des-ul">
-            <li><img src="img/mobile-phone.jpg" class="col-auto dev-head">
-                <p class="dev-paragraph text-one">THE ADMIN BAR AND<br> ABSOLUTE POSITIONING</p></li>
-            <li><img src="img/head.jpg" class="col-auto dev-head">
-                <p class="col-auto dev-paragraph text-one">THE ADMIN BAR AND<br> ABSOLUTE POSITIONING</p></li>
-            <li><img src="img/google-search.jpg" class="col-auto dev-head">
-                <p class="col-auto dev-paragraph text-one">THE ADMIN BAR AND<br> ABSOLUTE POSITIONING</p></li>
                 <li>
-                    <p class="col-auto dev-paragraph text-two">LAST TWEET <br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur deleniti facere incidunt nisi voluptate? Aut autem doloremque eius esse ex illum minus molestias quae? Ea eaque magnam mollitia possimus ullam?</p>
+                    <img src="img/mobile-phone.jpg" class="col-auto dev-head">
+                    <div class="dev-paragraph text-one">THE ADMIN BAR AND <br> ABSOLUTE POSITIONING</div>
+                </li>
+                <li>
+                    <img src="img/head.jpg" class="col-auto dev-head">
+                    <div class="dev-paragraph text-one">NIBBLER AWESOME <br> WEBSITE TESTING</div></li>
+                <li>
+                    <img src="img/google-search.jpg" class="col-auto dev-head">
+                    <div class="dev-paragraph text-one">HOW TO GET GOOGLE <br> TO LIKE YOU</div></li>
+                <li>
+                    <div class="dev-paragraph text-two tweet"><i class="fab fa-twitter"></i> <span style="margin-left: 10px">LAST TWEET</span> <br> Lorem ipsum dolor sit amet, consectetur
+                        adipisicing elit. Consequatur deleniti facere incidunt nisi voluptate? Aut autem doloremque eius
+                        esse ex illum minus molestias quae? Ea eaque magnam mollitia possimus ullam?</div>
                 </li>
             </ul>
         </div>
